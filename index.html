@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriba | Modern Online Library</title>
+    <meta name="description" content="Discover, search, and explore your favorite books in our modern, glassmorphic digital sanctuary. Learn programming, science, history, and read premium stories.">
+    
+    <!-- Step1: Normalize CSS and FontAwesome first -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    
+    <!-- Step2: Google Fonts (Outfit & Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Step3: Custom stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="Header">
+        <div class="container">
+            <div class="logo-text">
+                <i class="fa-solid fa-book-bookmark logo-icon"></i>Scriba
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#catalog">Catalog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Light and Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button class="mobile-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Landing Section -->
+    <section class="landing" id="home">
+        <div class="container landing-container">
+            <div class="intro-text">
+                <span class="badge">Your Digital Sanctuary</span>
+                <h1>Discover &amp; Explore Endless Knowledge</h1>
+                <p>Welcome to Scriba, a premium digital library crafted to inspire, educate, and empower your reading journey. Dive into our curated collections today.</p>   
+                <div class="landing-actions">
+                    <a href="#catalog" class="btn btn-primary">Browse Catalog</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-glass-container">
+                    <img src="images/hero_illustration.png" alt="Scriba Digital Library Concept" class="hero-img">
+                </div>
+                <div class="glow-sphere"></div>
+            </div>
+        </div>
+    </section> 
+    <!-- End Landing Section -->
+
+    <!-- Start Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feat animate-on-scroll">
+                <div class="feat-icon-wrapper">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <h3>E-Book Reader</h3>
+                <p>Immerse yourself in our distraction-free, beautifully formatted reading mode designed for any screen.</p>
+            </div>
+            <div class="feat animate-on-scroll" style="animation-delay: 0.1s;">
+                <div class="feat-icon-wrapper">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Brain Development</h3>
+                <p>Expand your knowledge base, test your memory, and develop core thinking skills through structured learning paths.</p>
+            </div>
+            <div class="feat animate-on-scroll" style="animation-delay: 0.2s;">
+                <div class="feat-icon-wrapper">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h3>Audiobooks</h3>
+                <p>Listen to your favorite literature on the go with premium, human-voiced audiobooks synced with text.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Features -->
+ 
+    <!-- Start Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="special-heading animate-on-scroll">Services</h2>
+            <p class="special-subtitle animate-on-scroll">Tailored categories to elevate your library experience</p>
+            <div class="services-content">
+                <div class="col">
+                    <!-- Start Service -->
+                    <div class="srv animate-on-scroll">
+                        <div class="srv-icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Programming</h3>
+                            <p>Master top languages: Python, JavaScript, C++, Rust, and modern system design patterns.</p>
+                        </div>
+                    </div>
+                    <div class="srv animate-on-scroll">
+                        <div class="srv-icon-box">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Science &amp; Math</h3>
+                            <p>Explore mathematics, advanced physics, chemistry, statistics, and astronomy topics.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">   
+                    <div class="srv animate-on-scroll">
+                        <div class="srv-icon-box">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        <div class="text">
+                            <h3>History</h3>
+                            <p>Travel through deep timelines, ancient civilisations, biographies, and global conflicts.</p>
+                        </div>
+                    </div>
+                    <div class="srv animate-on-scroll">
+                        <div class="srv-icon-box">
+                            <i class="fa-brands fa-creative-commons-share"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Fiction &amp; Novels</h3>
+                            <p>Escape into classic novels, science fiction, fantasy tales, mystery, and poetry anthologies.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col img-col animate-on-scroll">
+                    <div class="image">
+                        <img src="images/Landing_2.jpg" alt="Aesthetic stack of library books">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- End Services -->
+
+    <!-- Start Catalog (replacing Portfolio) -->
+    <section class="portfolio" id="catalog">
+        <div class="container">
+            <h2 class="special-heading animate-on-scroll">Book Catalog</h2>
+            <p class="special-subtitle animate-on-scroll">Explore premium selections or filter by interest</p>
+            
+            <div class="catalog-filters-container animate-on-scroll">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="book-search" placeholder="Search by title, author, or keywords...">
+                    <button id="search-clear-btn" class="clear-btn" aria-label="Clear Search" style="display: none;">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="category-filters" id="category-filters">
+                    <button class="filter-btn active" data-category="all">All Books</button>
+                    <button class="filter-btn" data-category="programming">Programming</button>
+                    <button class="filter-btn" data-category="science">Science</button>
+                    <button class="filter-btn" data-category="history">History</button>
+                    <button class="filter-btn" data-category="fiction">Fiction</button>
+                </div>
+            </div>
+
+            <div class="portfolio-content" id="book-grid">
+                <!-- Fallback static HTML for SEO (JavaScript will populate and sync interactivity) -->
+                <article class="card book-card animate-on-scroll" data-id="1" data-category="programming">
+                    <div class="card-img-wrapper">
+                        <img src="images/book_programming.png" alt="Clean Code">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Programming</span>
+                        <h3>Clean Code</h3>
+                        <p class="card-author">Robert C. Martin</p>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <button class="btn btn-card-details">View Details</button>
+                    </div>
+                </article>
+                <article class="card book-card animate-on-scroll" data-id="2" data-category="science">
+                    <div class="card-img-wrapper">
+                        <img src="images/book_science.png" alt="A Brief History of Time">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Science</span>
+                        <h3>A Brief History of Time</h3>
+                        <p class="card-author">Stephen Hawking</p>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>4.8</span>
+                        </div>
+                        <button class="btn btn-card-details">View Details</button>
+                    </div>
+                </article>
+                <article class="card book-card animate-on-scroll" data-id="3" data-category="history">
+                    <div class="card-img-wrapper">
+                        <img src="images/book_history.png" alt="The Guns of August">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">History</span>
+                        <h3>The Guns of August</h3>
+                        <p class="card-author">Barbara W. Tuchman</p>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>4.0</span>
+                        </div>
+                        <button class="btn btn-card-details">View Details</button>
+                    </div>
+                </article>
+            </div>
+            
+            <div id="no-results" class="no-results-msg" style="display: none;">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+                <p>No books match your criteria. Try adjusting your search query or filter.</p>
+            </div>
+        </div>
+    </section> 
+    <!-- End Catalog -->
+
+    <!-- Start About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="special-heading animate-on-scroll">About Us</h2>
+            <p class="special-subtitle animate-on-scroll">Designed to nurture and connect minds</p>
+            <div class="about-content">
+                <div class="image-wrapper animate-on-scroll">
+                    <div class="image">
+                        <img src="images/Landing_2.jpg" alt="Aesthetic cozy reading nook">
+                        <div class="about-image-glow"></div>
+                    </div>
+                </div>
+                <div class="text animate-on-scroll">
+                    <p class="highlight-text">We believe knowledge should be elegant, accessible, and inspiring. Scriba was created to bridge classic literacy with futuristic aesthetics.</p>
+                    <hr class="about-divider">
+                    <p>Our library hosts thousands of books, curated research materials, and direct links to worldwide databases. Whether you are searching for complex coding syntax, cosmological equations, or historic poetry, we have you covered. Join our community of over 50,000 active readers today.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-num">50K+</span>
+                            <span class="stat-lbl">Active Readers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">12K+</span>
+                            <span class="stat-lbl">E-Books &amp; Audio</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">99.8%</span>
+                            <span class="stat-lbl">Uptime Sanctuary</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End About -->
+
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="special-heading animate-on-scroll">Get in Touch</h2>
+            <p class="special-subtitle animate-on-scroll">We are here to support your lifelong learning</p>
+            <div class="contact-content animate-on-scroll">
+                <div class="contact-card glass">
+                    <p class="label">Have questions? Drop us a line at:</p>
+                    <a href="mailto:hello@scribalibrary.com?subject=Contact" class="link">hello@scribalibrary.com</a>
+                    
+                    <div class="contact-form-container">
+                        <h3>Send a Quick Message</h3>
+                        <form id="quick-contact" action="#" method="POST">
+                            <div class="form-group">
+                                <input type="email" id="contact-email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" placeholder="Your Message or Suggestion..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <p id="form-success" class="form-status success-msg" style="display: none;">
+                                <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent.
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="social">
+                        <h4>Connect with us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span class="brand-name">Scriba</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Book Detail Modal Overlay -->
+    <div id="book-modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <div class="modal-content glass">
+                <button class="close-modal" aria-label="Close Modal">&times;</button>
+                <div class="modal-body">
+                    <div class="modal-image-wrapper">
+                        <img id="modal-img" src="" alt="Book Cover">
+                    </div>
+                    <div class="modal-info">
+                        <span id="modal-category" class="category-tag">Category</span>
+                        <h2 id="modal-title">Book Title</h2>
+                        <p class="modal-author">by <span id="modal-author-name">Author</span></p>
+                        <div class="card-rating" id="modal-rating">
+                            <!-- Ratings inserted via JS -->
+                        </div>
+                        <p id="modal-description" class="modal-desc">Detailed book description goes here...</p>
+                        <div class="modal-actions">
+                            <button class="btn btn-primary" id="btn-read"><i class="fa-solid fa-book-open"></i> Read Book</button>
+                            <button class="btn btn-secondary" id="btn-listen"><i class="fa-solid fa-volume-high"></i> Listen Audio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="JS.js"></script>
+</body>
+</html>
